@@ -1,0 +1,15 @@
+[build]
+target = "browser"
+entrypoints = ["./index.html"]
+root = "."
+
+[build.minify]
+whitespace = true
+identifiers = true
+syntax = true
+
+[define]
+"process.env.NODE_ENV" = "\"production\""
+
+[serve.static]
+plugins = ["bun-plugin-tailwind"]
