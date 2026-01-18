@@ -1,11 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
     --font-archivo-black: "Archivo Black", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
     --text-88: 88px;
     --text-20: 20px;
     --color-cream: #FFFCE7;
     --color-gradient-cyan: #0CC0DF;
     --color-gradient-yellow: #FFDE59;
+}
+
+@keyframes shimmer {
+    0% {
+        background: linear-gradient(90deg, #0CC0DF, #FFDE59);
+        background-position: 0% center;
+    }
+
+    50% {
+        background: linear-gradient(90deg, #FFDE59, #0CC0DF);
+        background-position: 100% center;
+    }
+
+    100% {
+        background: linear-gradient(90deg, #0CC0DF, #FFDE59);
+        background-position: 0% center;
+    }
+}
+
+@keyframes fadeInParagraphs {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-paragraphs {
+    transition: opacity 0.4s ease-out 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.group:hover .about-paragraphs {
+    animation: fadeInParagraphs 0.4s ease-out 0.1s forwards;
+}
+
+.shimmer-on-hover:hover {
+    animation: shimmer 1.0s ease-in-out infinite;
+}
+
+.menu-title {
+    position: relative;
+}
+
+.menu-title.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #FFFCE7;
+    border-radius: 5px;
 }

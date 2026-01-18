@@ -2,6 +2,7 @@
 target = "browser"
 entrypoints = ["./index.html"]
 root = "."
+publicPath = "/"
 
 [build.minify]
 whitespace = true
