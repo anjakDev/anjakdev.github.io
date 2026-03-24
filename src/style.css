@@ -12,19 +12,25 @@
     --color-gradient-yellow: #FFDE59;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+
 @keyframes shimmer {
     0% {
-        background: linear-gradient(90deg, #0CC0DF, #FFDE59);
+        background: linear-gradient(90deg, var(--color-gradient-cyan), var(--color-gradient-yellow));
         background-position: 0% center;
     }
 
     50% {
-        background: linear-gradient(90deg, #FFDE59, #0CC0DF);
+        background: linear-gradient(90deg, var(--color-gradient-yellow), var(--color-gradient-cyan));
         background-position: 100% center;
     }
 
     100% {
-        background: linear-gradient(90deg, #0CC0DF, #FFDE59);
+        background: linear-gradient(90deg, var(--color-gradient-cyan), var(--color-gradient-yellow));
         background-position: 0% center;
     }
 }
@@ -64,6 +70,14 @@
     left: 0;
     right: 0;
     height: 4px;
-    background-color: #FFFCE7;
+    background-color: var(--color-cream);
     border-radius: 5px;
 }
+
+/* Experience card gradient left border */
+.project-card-wrapper {
+    padding-left: 3px;
+    border-radius: 0.5rem;
+    background: linear-gradient(to bottom, var(--color-gradient-cyan), var(--color-gradient-yellow));
+}
+

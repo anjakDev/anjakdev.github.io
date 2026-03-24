@@ -1,7 +1,6 @@
 import { createAboutSection } from './aboutSection'
 import { createImageCard } from './imageCard'
 import { createMenuSection } from './menuSection'
-import './style.css'
 import { createMainBarTitle, createSideBarTitle } from './titleSection'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
