@@ -2,6 +2,7 @@ import coffeeIcon from './assets/coffee.svg'
 import diamondIcon from './assets/diamond.svg'
 import lightIcon from './assets/light.svg'
 import { createExperienceSection } from './experienceSection'
+import { createSkillsSection } from './skillsSection'
 
 function createParagraphOne(): string {
   return `<div class="flex gap-4 items-start">
@@ -52,7 +53,7 @@ export function createAboutSection(): string {
 
           <!-- Skills Content -->
           <div class="section-content hidden" data-section="skills">
-            <p class="font-raleway text-md text-slate-600 leading-relaxed">This section will contain information about my skills. However, it is still a work in progress.</p>
+            ${createSkillsSection()}
           </div>
         </div>
       </div>

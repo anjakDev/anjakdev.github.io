@@ -74,6 +74,26 @@ html, body {
     border-radius: 5px;
 }
 
+/* Skill tag — gradient border pill */
+.skill-tag {
+    padding: 1.5px;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, var(--color-gradient-cyan), var(--color-gradient-yellow));
+    cursor: default;
+    user-select: none;
+}
+
+.skill-tag-inner {
+    background-color: var(--color-cream);
+    border-radius: 9999px;
+    padding: 0.375rem 1rem;
+    font-family: var(--font-raleway);
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #334155;
+    white-space: nowrap;
+}
+
 /* Experience card gradient left border */
 .project-card-wrapper {
     padding-left: 3px;

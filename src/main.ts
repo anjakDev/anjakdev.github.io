@@ -2,6 +2,7 @@ import { createAboutSection } from './aboutSection'
 import { createImageCard } from './imageCard'
 import { createMenuSection } from './menuSection'
 import { createMainBarTitle, createSideBarTitle } from './titleSection'
+import { initSkillsPhysics } from './skillsSection'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -29,6 +30,8 @@ app.innerHTML = `
 `
 
 // Menu hover handlers
+let skillsInitialized = false
+
 document.querySelectorAll('.menu-title').forEach((title) => {
   title.addEventListener('mouseenter', function (this: HTMLElement) {
     const section = (this as HTMLElement).getAttribute('data-section');
@@ -44,6 +47,11 @@ document.querySelectorAll('.menu-title').forEach((title) => {
     const activeContent = document.querySelector('[data-section="' + section + '"].section-content');
     if (activeContent) {
       activeContent.classList.remove('hidden');
+    }
+
+    if (section === 'skills' && !skillsInitialized) {
+      skillsInitialized = true
+      initSkillsPhysics()
     }
   });
 });
