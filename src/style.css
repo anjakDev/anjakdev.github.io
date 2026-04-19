@@ -99,3 +99,10 @@ html, body {
     background: linear-gradient(to bottom, var(--color-gradient-cyan), var(--color-gradient-yellow));
 }
 
+/* Mobile: stack all sections regardless of desktop hover toggle */
+@media (max-width: 1023px) {
+    .section-content {
+        display: block !important;
+    }
+}
+

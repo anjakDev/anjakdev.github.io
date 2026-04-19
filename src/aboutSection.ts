@@ -39,6 +39,7 @@ export function createAboutSection(): string {
         <div class="max-w-4xl mx-auto">
           <!-- About Me Content -->
           <div class="section-content active" data-section="about">
+            <h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6">About Me</h2>
             <div class="space-y-4">
               ${createParagraphOne()}
               ${createParagraphTwo()}
@@ -48,11 +49,13 @@ export function createAboutSection(): string {
 
           <!-- Experience Content -->
           <div class="section-content hidden" data-section="experience">
+            <h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6 mt-12">Experience</h2>
             ${createExperienceSection()}
           </div>
 
           <!-- Skills Content -->
           <div class="section-content hidden" data-section="skills">
+            <h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6 mt-12">Skills</h2>
             ${createSkillsSection()}
           </div>
         </div>

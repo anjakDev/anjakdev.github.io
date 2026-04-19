@@ -17,7 +17,7 @@ app.innerHTML = `
     <!-- Main Content Area -->
     <div class="w-full lg:w-2/3 lg:min-h-screen bg-cream text-slate-900 flex flex-col">
       <!-- Top Half: Hero Section -->
-      <div class="flex flex-col lg:h-1/2 lg:flex-row lg:items-start lg:justify-between">
+      <div class="flex flex-col items-center pt-12 lg:pt-0 lg:h-1/2 lg:flex-row lg:items-start lg:justify-between">
         ${createMainBarTitle()}
         
         ${createImageCard()}
