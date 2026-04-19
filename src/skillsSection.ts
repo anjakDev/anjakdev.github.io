@@ -33,24 +33,15 @@ interface TagBody {
   h: number
 }
 
-export function createSkillsSection(): string {
-  const mobileTags = skills
-    .map(
-      (skill) =>
-        `<div class="skill-tag">
+function renderTag(skill: string, absolute: boolean): string {
+  return `<div class="skill-tag${absolute ? ' absolute' : ''}">
       <div class="skill-tag-inner">${skill}</div>
-    </div>`,
-    )
-    .join("\n  ")
+    </div>`
+}
 
-  const physicsTags = skills
-    .map(
-      (skill) =>
-        `<div class="skill-tag absolute">
-      <div class="skill-tag-inner">${skill}</div>
-    </div>`,
-    )
-    .join("\n  ")
+export function createSkillsSection(): string {
+  const mobileTags = skills.map((s) => renderTag(s, false)).join("\n  ")
+  const physicsTags = skills.map((s) => renderTag(s, true)).join("\n  ")
 
   return `
   <!-- Mobile: static wrapped pills -->

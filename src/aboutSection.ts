@@ -26,9 +26,14 @@ function createParagraphThree(): string {
   return `<div class="flex gap-4 items-start">
                 <img src="${coffeeIcon}" alt="" class="w-6 h-6 shrink-0 mt-1" />
                 <p class="font-raleway text-md text-slate-600 leading-relaxed">
-                  My day never has enough hours to fit in all the things I love doing, but if I have enough cups of coffee, a good gym session and a good playlist, I am always bound to have a day to be proud of. 
+                  My day never has enough hours to fit in all the things I love doing, but if I have enough cups of coffee, a good gym session and a good playlist, I am always bound to have a day to be proud of.
                 </p>
               </div>`
+}
+
+function createMobileSectionHeader(title: string, isFirst: boolean = false): string {
+  const topMargin = isFirst ? '' : ' mt-12'
+  return `<h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6${topMargin}">${title}</h2>`
 }
 
 export function createAboutSection(): string {
@@ -39,7 +44,7 @@ export function createAboutSection(): string {
         <div class="max-w-4xl mx-auto">
           <!-- About Me Content -->
           <div class="section-content active" data-section="about">
-            <h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6">About Me</h2>
+            ${createMobileSectionHeader('About Me', true)}
             <div class="space-y-4">
               ${createParagraphOne()}
               ${createParagraphTwo()}
@@ -49,19 +54,19 @@ export function createAboutSection(): string {
 
           <!-- Experience Content -->
           <div class="section-content hidden" data-section="experience">
-            <h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6 mt-12">Experience</h2>
+            ${createMobileSectionHeader('Experience')}
             ${createExperienceSection()}
           </div>
 
           <!-- Skills Content -->
           <div class="section-content hidden" data-section="skills">
-            <h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6 mt-12">Skills</h2>
+            ${createMobileSectionHeader('Skills')}
             ${createSkillsSection()}
           </div>
         </div>
       </div>
     </div>
 
-    
+
     `
 }
