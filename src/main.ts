@@ -9,7 +9,7 @@ const app = document.querySelector<HTMLDivElement>('#app')!
 app.innerHTML = `
   <div class="flex flex-col lg:flex-row lg:min-h-screen">
     <!-- Sidebar Gradient -->
-    <div class="w-full h-48 lg:w-1/3 lg:min-h-screen bg-linear-to-r from-gradient-cyan to-gradient-yellow flex flex-col">
+    <div class="w-full h-48 lg:h-screen lg:sticky lg:top-0 lg:w-1/3 bg-linear-to-r from-gradient-cyan to-gradient-yellow flex flex-col">
       ${createSideBarTitle()}
       <div class="w-full ">${createMenuSection()}</div>
     </div>
