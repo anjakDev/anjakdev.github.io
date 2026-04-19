@@ -33,26 +33,6 @@ html, body {
     }
 }
 
-@keyframes fadeInParagraphs {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.about-paragraphs {
-    transition: opacity 0.4s ease-out 0.2s;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.group:hover .about-paragraphs {
-    animation: fadeInParagraphs 0.4s ease-out 0.1s forwards;
-}
-
 .shimmer-on-hover:hover {
     animation: shimmer 1.0s ease-in-out infinite;
 }

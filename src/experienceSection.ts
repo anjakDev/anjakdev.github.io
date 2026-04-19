@@ -44,8 +44,8 @@ function createTagGroup(group: TagGroup): string {
     )
     .join(' ')
 
-  return `<div class="flex flex-wrap items-center gap-y-1 gap-x-2">
-      <span class="font-raleway text-xs uppercase tracking-widest text-slate-400 shrink-0">${group.label}</span>
+  return `<div class="flex flex-wrap items-center gap-y-2 lg:gap-y-1 gap-x-2">
+      <span class="font-raleway text-xs uppercase tracking-widest text-slate-400 shrink-0 w-full lg:w-auto">${group.label}</span>
       ${pills}
     </div>`
 }
@@ -60,7 +60,7 @@ function createProjectCard(project: ProjectData): string {
         <p class="font-raleway text-sm text-slate-500 mt-0.5">${project.label}</p>
       </div>
       <p class="font-raleway text-sm text-slate-600 leading-relaxed">${project.description}</p>
-      <div class="flex flex-col gap-1.5">
+      <div class="flex flex-col gap-3 lg:gap-1.5">
         ${tagGroupsHtml}
       </div>
     </div>
