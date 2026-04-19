@@ -33,21 +33,28 @@ interface TagBody {
   h: number
 }
 
-export function createSkillsSection(): string {
-  const tags = skills
-    .map(
-      (skill) =>
-        `<div class="skill-tag absolute">
+function renderTag(skill: string, absolute: boolean): string {
+  return `<div class="skill-tag${absolute ? ' absolute' : ''}">
       <div class="skill-tag-inner">${skill}</div>
-    </div>`,
-    )
-    .join("\n  ")
+    </div>`
+}
 
-  return `<div id="skills-physics-container" class="relative w-full overflow-hidden" style="height: 320px;">
-  ${tags}
-  <button id="skills-sort-btn" class="absolute bottom-3 right-3 font-raleway text-xs text-slate-400 hover:text-slate-600 cursor-pointer select-none px-2 py-1 rounded-full border border-slate-200 bg-cream/80 transition">sort</button>
-  <span id="skills-timer" class="absolute bottom-3 left-3 font-raleway text-xs text-slate-400 opacity-0 transition-opacity"></span>
-</div>`
+export function createSkillsSection(): string {
+  const mobileTags = skills.map((s) => renderTag(s, false)).join("\n  ")
+  const physicsTags = skills.map((s) => renderTag(s, true)).join("\n  ")
+
+  return `
+  <!-- Mobile: static wrapped pills -->
+  <div class="lg:hidden flex flex-wrap gap-2">
+    ${mobileTags}
+  </div>
+
+  <!-- Desktop: physics-driven container -->
+  <div id="skills-physics-container" class="hidden lg:block relative w-full overflow-hidden" style="height: 320px;">
+    ${physicsTags}
+    <button id="skills-sort-btn" class="absolute bottom-3 right-3 font-raleway text-xs text-slate-400 hover:text-slate-600 cursor-pointer select-none px-2 py-1 rounded-full border border-slate-200 bg-cream/80 transition">sort</button>
+    <span id="skills-timer" class="absolute bottom-3 left-3 font-raleway text-xs text-slate-400 opacity-0 transition-opacity"></span>
+  </div>`
 }
 
 export function initSkillsPhysics(): void {

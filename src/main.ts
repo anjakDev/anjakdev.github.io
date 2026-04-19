@@ -9,7 +9,7 @@ const app = document.querySelector<HTMLDivElement>('#app')!
 app.innerHTML = `
   <div class="flex flex-col lg:flex-row lg:min-h-screen">
     <!-- Sidebar Gradient -->
-    <div class="w-full h-48 lg:w-1/3 lg:min-h-screen bg-linear-to-r from-gradient-cyan to-gradient-yellow flex flex-col">
+    <div class="w-full h-48 lg:h-screen lg:sticky lg:top-0 lg:overflow-y-auto lg:w-1/3 bg-linear-to-r from-gradient-cyan to-gradient-yellow flex flex-col">
       ${createSideBarTitle()}
       <div class="w-full ">${createMenuSection()}</div>
     </div>
@@ -17,7 +17,7 @@ app.innerHTML = `
     <!-- Main Content Area -->
     <div class="w-full lg:w-2/3 lg:min-h-screen bg-cream text-slate-900 flex flex-col">
       <!-- Top Half: Hero Section -->
-      <div class="flex flex-col lg:h-1/2 lg:flex-row lg:items-start lg:justify-between">
+      <div class="flex flex-col items-center pt-12 lg:pt-0 lg:h-1/2 lg:flex-row lg:items-start lg:justify-between">
         ${createMainBarTitle()}
         
         ${createImageCard()}

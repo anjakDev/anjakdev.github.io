@@ -13,8 +13,6 @@
 }
 
 html, body {
-    height: 100%;
-    overflow: hidden;
     overscroll-behavior: none;
 }
 
@@ -33,26 +31,6 @@ html, body {
         background: linear-gradient(90deg, var(--color-gradient-cyan), var(--color-gradient-yellow));
         background-position: 0% center;
     }
-}
-
-@keyframes fadeInParagraphs {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.about-paragraphs {
-    transition: opacity 0.4s ease-out 0.2s;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.group:hover .about-paragraphs {
-    animation: fadeInParagraphs 0.4s ease-out 0.1s forwards;
 }
 
 .shimmer-on-hover:hover {
@@ -99,5 +77,12 @@ html, body {
     padding-left: 3px;
     border-radius: 0.5rem;
     background: linear-gradient(to bottom, var(--color-gradient-cyan), var(--color-gradient-yellow));
+}
+
+/* Mobile: stack all sections regardless of desktop hover toggle */
+@media (max-width: 1023px) {
+    .section-content {
+        display: block !important;
+    }
 }
 
