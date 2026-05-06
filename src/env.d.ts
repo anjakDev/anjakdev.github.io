@@ -1,3 +1,9 @@
+interface ImportMeta {
+  readonly env?: {
+    readonly GH_ACTIVITY_TOKEN?: string
+  }
+}
+
 declare module '*.webp' {
   const content: string;
   export default content;

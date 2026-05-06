@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "bun index.html --watch",
-    "build": "rm -rf dist && bunx tailwindcss -i ./src/style.css -o ./dist/style.css && bun build ./index.html --outdir dist"
+    "build": "bun run scripts/build.ts",
+    "preview": "bunx serve dist"
   },
   "repository": {
     "type": "git",
