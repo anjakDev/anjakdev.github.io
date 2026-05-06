@@ -3,6 +3,7 @@ import { createImageCard } from './imageCard'
 import { createMenuSection } from './menuSection'
 import { createMainBarTitle, createSideBarTitle } from './titleSection'
 import { initSkillsPhysics } from './skillsSection'
+import { initGithubActivity } from './githubActivity'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -55,3 +56,5 @@ document.querySelectorAll('.menu-title').forEach((title) => {
     }
   });
 });
+
+initGithubActivity()
