@@ -36,7 +36,7 @@ function cell(color: string): string {
 }
 
 async function fetchWeeks(): Promise<ContributionWeek[]> {
-  const token = import.meta.env?.GH_ACTIVITY_TOKEN
+  const token = import.meta.env.GH_ACTIVITY_TOKEN
   if (!token) {
     console.warn('[github-activity] GH_ACTIVITY_TOKEN is not set — widget hidden')
     return []
