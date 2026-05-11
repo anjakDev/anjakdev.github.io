@@ -1,0 +1,59 @@
+name: Fetch reading stats
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch stats from Miniflux
+        env:
+          MINIFLUX_BASE_URL: ${{ secrets.MINIFLUX_BASE_URL }}
+          MINIFLUX_API_KEY: ${{ secrets.MINIFLUX_API_KEY }}
+        run: |
+          entries=$(curl -sf \
+            -H "X-Auth-Token: $MINIFLUX_API_KEY" \
+            "$MINIFLUX_BASE_URL/v1/entries?status=read&order=changed_at&direction=desc&limit=10")
+
+          feeds=$(curl -sf \
+            -H "X-Auth-Token: $MINIFLUX_API_KEY" \
+            "$MINIFLUX_BASE_URL/v1/feeds")
+
+          categories=$(curl -sf \
+            -H "X-Auth-Token: $MINIFLUX_API_KEY" \
+            "$MINIFLUX_BASE_URL/v1/categories")
+
+          jq -n \
+            --arg generatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            --argjson feedCount "$(echo "$feeds" | jq 'length')" \
+            --argjson categoryCount "$(echo "$categories" | jq 'length')" \
+            --argjson entries "$entries" \
+            '{
+              generatedAt: $generatedAt,
+              feeds: { total: $feedCount, categories: $categoryCount },
+              recentReads: [
+                (($entries.entries // [])[:5])[] | {
+                  title: .title,
+                  url: .url,
+                  feedTitle: .feed.title,
+                  publishedAt: .published_at,
+                  readingTime: .reading_time
+                }
+              ]
+            }' > reading-stats.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reading-stats.json
+          git diff --staged --quiet || git commit -m "chore: update reading stats"
+          git push

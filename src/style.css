@@ -86,3 +86,10 @@ html, body {
     }
 }
 
+/* Reading card content: always expanded on desktop regardless of mobile toggle state */
+@media (min-width: 1024px) {
+    .reading-card-content {
+        display: block !important;
+    }
+}
+

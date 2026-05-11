@@ -24,3 +24,5 @@ if (!result.success) {
   for (const log of result.logs) console.error(log)
   process.exit(1)
 }
+
+await $`[ -f reading-stats.json ] && cp reading-stats.json dist/reading-stats.json || true`
