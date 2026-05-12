@@ -19,17 +19,20 @@ jobs:
           MINIFLUX_BASE_URL: ${{ secrets.MINIFLUX_BASE_URL }}
           MINIFLUX_API_KEY: ${{ secrets.MINIFLUX_API_KEY }}
         run: |
-          entries=$(curl -sf \
+          entries=$(curl -sf --max-time 30 \
             -H "X-Auth-Token: $MINIFLUX_API_KEY" \
-            "$MINIFLUX_BASE_URL/v1/entries?status=read&order=changed_at&direction=desc&limit=10")
+            "$MINIFLUX_BASE_URL/v1/entries?status=read&order=changed_at&direction=desc&limit=10") \
+            || { echo "Failed to fetch entries from Miniflux"; exit 1; }
 
-          feeds=$(curl -sf \
+          feeds=$(curl -sf --max-time 30 \
             -H "X-Auth-Token: $MINIFLUX_API_KEY" \
-            "$MINIFLUX_BASE_URL/v1/feeds")
+            "$MINIFLUX_BASE_URL/v1/feeds") \
+            || { echo "Failed to fetch feeds from Miniflux"; exit 1; }
 
-          categories=$(curl -sf \
+          categories=$(curl -sf --max-time 30 \
             -H "X-Auth-Token: $MINIFLUX_API_KEY" \
-            "$MINIFLUX_BASE_URL/v1/categories")
+            "$MINIFLUX_BASE_URL/v1/categories") \
+            || { echo "Failed to fetch categories from Miniflux"; exit 1; }
 
           jq -n \
             --arg generatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
@@ -41,11 +44,11 @@ jobs:
               feeds: { total: $feedCount, categories: $categoryCount },
               recentReads: [
                 (($entries.entries // [])[:5])[] | {
-                  title: .title,
+                  title: (.title // "(no title)"),
                   url: .url,
-                  feedTitle: .feed.title,
+                  feedTitle: (.feed.title // ""),
                   publishedAt: .published_at,
-                  readingTime: .reading_time
+                  readingTime: (.reading_time // 0)
                 }
               ]
             }' > reading-stats.json

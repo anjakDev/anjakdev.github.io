@@ -30,6 +30,7 @@ function safeUrl(url: string): string {
 
 function relativeTime(iso: string): string {
   const diffMs = Date.now() - new Date(iso).getTime()
+  if (!Number.isFinite(diffMs) || diffMs < 0) return 'recently updated'
   const mins = Math.floor(diffMs / 60_000)
   if (mins < 60) return `updated ${mins} minute${mins !== 1 ? 's' : ''} ago`
   const hours = Math.floor(mins / 60)
@@ -40,10 +41,12 @@ function relativeTime(iso: string): string {
 
 function buildArticle(article: ReadingArticle, index: number): string {
   const accent = ACCENT_COLORS[index % ACCENT_COLORS.length]
+  const title = article.title ?? '(no title)'
+  const feedTitle = article.feedTitle ?? ''
   return `<div style="border-left:3px solid ${accent};padding-left:10px" class="mb-2 last:mb-0">
-    <a href="${safeUrl(article.url)}" target="_blank" rel="noopener noreferrer"
-       class="font-raleway text-sm font-semibold text-slate-800 hover:underline block leading-snug">${esc(article.title)}</a>
-    <span class="font-raleway text-xs" style="color:rgba(100,116,139,0.72)">${esc(article.feedTitle)}</span>
+    <a href="${esc(safeUrl(article.url))}" target="_blank" rel="noopener noreferrer"
+       class="font-raleway text-sm font-semibold text-slate-800 hover:underline block leading-snug">${esc(title)}</a>
+    <span class="font-raleway text-xs" style="color:rgba(100,116,139,0.72)">${esc(feedTitle)}</span>
   </div>`
 }
 
@@ -60,9 +63,9 @@ function buildHTML(stats: ReadingStats): string {
   const count = Math.min(stats.recentReads.length, MAX_ARTICLES)
 
   return `
-    <div id="reading-toggle"
-         class="lg:hidden flex items-center justify-between px-4 py-3 cursor-pointer"
-         style="background:rgba(0,0,0,0.055);border:0.5px solid rgba(62,207,176,0.35);border-radius:0.5rem">
+    <button id="reading-toggle" type="button" aria-expanded="false"
+            class="lg:hidden w-full flex items-center justify-between px-4 py-3"
+            style="background:rgba(0,0,0,0.055);border:0.5px solid rgba(62,207,176,0.35);border-radius:0.5rem">
       <div class="flex items-center gap-2">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#3ecfb0;flex-shrink:0">
           <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
@@ -76,7 +79,7 @@ function buildHTML(stats: ReadingStats): string {
           <polyline points="6 9 12 15 18 9"/>
         </svg>
       </div>
-    </div>
+    </button>
     <div id="reading-content" class="reading-card-content" style="display:none">
       <div id="reading-inner" class="p-3" style="background:rgba(0,0,0,0.055);border:0.5px solid rgba(62,207,176,0.35);border-radius:0.5rem">
         ${buildCardBody(stats)}
@@ -98,27 +101,32 @@ async function fetchStats(): Promise<ReadingStats | null> {
 }
 
 export function initReadingCard(): void {
-  fetchStats().then(stats => {
-    if (!stats) return
-    const container = document.getElementById('reading-card-container')
-    if (!container) return
+  fetchStats()
+    .then(stats => {
+      if (!stats) return
+      const container = document.getElementById('reading-card-container')
+      if (!container) return
 
-    container.innerHTML = buildHTML(stats)
+      container.innerHTML = buildHTML(stats)
 
-    const toggle = document.getElementById('reading-toggle')
-    const content = document.getElementById('reading-content')
-    const inner = document.getElementById('reading-inner')
-    const chevron = document.getElementById('reading-chevron')
-    if (!toggle || !content || !inner || !chevron) return
+      const toggle = document.getElementById('reading-toggle')
+      const content = document.getElementById('reading-content')
+      const inner = document.getElementById('reading-inner')
+      const chevron = document.getElementById('reading-chevron')
+      if (!toggle || !content || !inner || !chevron) return
 
-    let expanded = false
-    toggle.addEventListener('click', () => {
-      expanded = !expanded
-      content.style.display = expanded ? 'block' : 'none'
-      chevron.style.transform = expanded ? 'rotate(180deg)' : ''
-      toggle.style.borderRadius = expanded ? '0.5rem 0.5rem 0 0' : '0.5rem'
-      inner.style.borderTop = expanded ? 'none' : ''
-      inner.style.borderRadius = expanded ? '0 0 0.5rem 0.5rem' : '0.5rem'
+      let expanded = false
+      toggle.addEventListener('click', () => {
+        expanded = !expanded
+        toggle.setAttribute('aria-expanded', String(expanded))
+        content.style.display = expanded ? 'block' : 'none'
+        chevron.style.transform = expanded ? 'rotate(180deg)' : ''
+        toggle.style.borderRadius = expanded ? '0.5rem 0.5rem 0 0' : '0.5rem'
+        inner.style.borderTop = expanded ? 'none' : ''
+        inner.style.borderRadius = expanded ? '0 0 0.5rem 0.5rem' : '0.5rem'
+      })
     })
-  })
+    .catch((err: unknown) => {
+      console.warn('[reading-card] Failed to render', err)
+    })
 }
