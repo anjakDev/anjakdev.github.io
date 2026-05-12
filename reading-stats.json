@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-05-12T15:06:05Z",
+  "feeds": {
+    "total": 10,
+    "categories": 1
+  },
+  "recentReads": [
+    {
+      "title": "Are closed social networks inevitable?",
+      "url": "https://danluu.com/open-social-networks/",
+      "feedTitle": "https://danluu.com/atom/index.xml",
+      "publishedAt": "2010-01-01T00:00:00Z",
+      "readingTime": 52
+    },
+    {
+      "title": "How does Boston compare to SV and what do MIT and Stanford have to do with it?",
+      "url": "https://danluu.com/mit-stanford/",
+      "feedTitle": "https://danluu.com/atom/index.xml",
+      "publishedAt": "2010-01-01T00:00:00Z",
+      "readingTime": 46
+    },
+    {
+      "title": "The agent principal-agent problem",
+      "url": "https://crawshaw.io/blog/agent-principal-agent",
+      "feedTitle": "David Crawshaw",
+      "publishedAt": "2026-05-07T00:00:00Z",
+      "readingTime": 5
+    },
+    {
+      "title": "Using Bloom filters to efficiently synchronise hash graphs",
+      "url": "http://martin.kleppmann.com/2020/12/02/bloom-filter-hash-graph-sync.html",
+      "feedTitle": "Martin Kleppmann's blog",
+      "publishedAt": "2020-12-02T00:00:00Z",
+      "readingTime": 8
+    },
+    {
+      "title": "Work-life balance at Bioware",
+      "url": "https://danluu.com/bioware/",
+      "feedTitle": "https://danluu.com/atom/index.xml",
+      "publishedAt": "2008-05-31T00:00:00Z",
+      "readingTime": 17
+    }
+  ]
+}
