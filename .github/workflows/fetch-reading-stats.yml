@@ -34,16 +34,18 @@ jobs:
             "$MINIFLUX_BASE_URL/v1/categories") \
             || { echo "Failed to fetch categories from Miniflux"; exit 1; }
 
+          echo "$entries" > /tmp/entries.json
+
           jq -n \
             --arg generatedAt "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
             --argjson feedCount "$(echo "$feeds" | jq 'length')" \
             --argjson categoryCount "$(echo "$categories" | jq 'length')" \
-            --argjson entries "$entries" \
+            --slurpfile entries /tmp/entries.json \
             '{
               generatedAt: $generatedAt,
               feeds: { total: $feedCount, categories: $categoryCount },
               recentReads: [
-                (($entries.entries // [])[:5])[] | {
+                (($entries[0].entries // [])[:5])[] | {
                   title: (.title // "(no title)"),
                   url: .url,
                   feedTitle: (.feed.title // ""),
