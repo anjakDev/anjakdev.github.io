@@ -4,6 +4,7 @@ import { createMenuSection } from './menuSection'
 import { createMainBarTitle, createSideBarTitle } from './titleSection'
 import { initSkillsPhysics } from './skillsSection'
 import { initGithubActivity } from './githubActivity'
+import { initReadingCard } from './readingCard'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -20,8 +21,11 @@ app.innerHTML = `
       <!-- Top Half: Hero Section -->
       <div class="flex flex-col items-center pt-12 lg:pt-0 lg:h-1/2 lg:flex-row lg:items-start lg:justify-between">
         ${createMainBarTitle()}
-        
-        ${createImageCard()}
+
+        <div class="flex flex-col items-center lg:flex-row lg:items-start lg:mt-32 lg:mr-8 gap-12 w-full lg:w-auto">
+          ${createImageCard()}
+          <div id="reading-card-container" class="w-full px-6 lg:px-0 lg:w-64 lg:-mt-4"></div>
+        </div>
       </div>
       
       <!-- Bottom Half: About Section -->
@@ -58,3 +62,4 @@ document.querySelectorAll('.menu-title').forEach((title) => {
 });
 
 initGithubActivity()
+initReadingCard()
