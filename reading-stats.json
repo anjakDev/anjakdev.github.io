@@ -1,10 +1,17 @@
 {
-  "generatedAt": "2026-05-13T05:15:00Z",
+  "generatedAt": "2026-05-14T00:20:01Z",
   "feeds": {
     "total": 10,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "The Future of Everything is Lies, I Guess",
+      "url": "https://aphyr.com/posts/411-the-future-of-everything-is-lies-i-guess",
+      "feedTitle": "Aphyr: Posts",
+      "publishedAt": "2026-04-07T03:20:12Z",
+      "readingTime": 12
+    },
     {
       "title": "Are closed social networks inevitable?",
       "url": "https://danluu.com/open-social-networks/",
@@ -32,13 +39,6 @@
       "feedTitle": "Martin Kleppmann's blog",
       "publishedAt": "2020-12-02T00:00:00Z",
       "readingTime": 8
-    },
-    {
-      "title": "Work-life balance at Bioware",
-      "url": "https://danluu.com/bioware/",
-      "feedTitle": "https://danluu.com/atom/index.xml",
-      "publishedAt": "2008-05-31T00:00:00Z",
-      "readingTime": 17
     }
   ]
 }
