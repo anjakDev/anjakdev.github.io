@@ -1,10 +1,17 @@
 {
-  "generatedAt": "2026-05-15T00:17:52Z",
+  "generatedAt": "2026-05-16T00:16:06Z",
   "feeds": {
-    "total": 10,
+    "total": 11,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "🌀🗞 The FLUX Review, Ep. 235",
+      "url": "https://read.fluxcollective.org/p/235",
+      "feedTitle": "🌀🗞 The FLUX Review",
+      "publishedAt": "2026-05-15T00:02:49Z",
+      "readingTime": 7
+    },
     {
       "title": "The Future of Everything is Lies, I Guess",
       "url": "https://aphyr.com/posts/411-the-future-of-everything-is-lies-i-guess",
@@ -32,13 +39,6 @@
       "feedTitle": "David Crawshaw",
       "publishedAt": "2026-05-07T00:00:00Z",
       "readingTime": 5
-    },
-    {
-      "title": "Using Bloom filters to efficiently synchronise hash graphs",
-      "url": "http://martin.kleppmann.com/2020/12/02/bloom-filter-hash-graph-sync.html",
-      "feedTitle": "Martin Kleppmann's blog",
-      "publishedAt": "2020-12-02T00:00:00Z",
-      "readingTime": 8
     }
   ]
 }
