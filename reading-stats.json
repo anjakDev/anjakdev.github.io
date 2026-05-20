@@ -1,10 +1,31 @@
 {
-  "generatedAt": "2026-05-19T00:21:13Z",
+  "generatedAt": "2026-05-20T00:21:47Z",
   "feeds": {
     "total": 12,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "TypeScript, C# and Turbo Pascal with Anders Hejlsberg",
+      "url": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
+      "feedTitle": "The Pragmatic Engineer",
+      "publishedAt": "2026-05-13T17:06:59Z",
+      "readingTime": 6
+    },
+    {
+      "title": "What is Code",
+      "url": "https://martinfowler.com/articles/what-is-code.html",
+      "feedTitle": "Martin Fowler",
+      "publishedAt": "2026-05-12T13:30:00Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Quoting Mitchell Hashimoto",
+      "url": "https://simonwillison.net/2026/May/14/mitchell-hashimoto/#atom-everything",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-05-14T22:31:20Z",
+      "readingTime": 1
+    },
     {
       "title": "Fragments: May 14",
       "url": "https://martinfowler.com/fragments/2026-05-14.html",
@@ -18,27 +39,6 @@
       "feedTitle": "Simon Willison's Weblog",
       "publishedAt": "2026-05-17T15:59:41Z",
       "readingTime": 1
-    },
-    {
-      "title": "Why Cilium vendors every Go module in 2026",
-      "url": "https://golangweekly.com/issues/601",
-      "feedTitle": "Golang Weekly",
-      "publishedAt": "2026-05-15T00:00:00Z",
-      "readingTime": 3
-    },
-    {
-      "title": "🌀🗞 The FLUX Review, Ep. 235",
-      "url": "https://read.fluxcollective.org/p/235",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-05-15T00:02:49Z",
-      "readingTime": 7
-    },
-    {
-      "title": "The Future of Everything is Lies, I Guess",
-      "url": "https://aphyr.com/posts/411-the-future-of-everything-is-lies-i-guess",
-      "feedTitle": "Aphyr: Posts",
-      "publishedAt": "2026-04-07T03:20:12Z",
-      "readingTime": 12
     }
   ]
 }
