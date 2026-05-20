@@ -1,5 +1,5 @@
 interface ImportMeta {
-  readonly env?: {
+  readonly env: {
     readonly GH_ACTIVITY_TOKEN?: string
   }
 }
