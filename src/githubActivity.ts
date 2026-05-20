@@ -95,7 +95,7 @@ function buildWidgetHTML(weeks: ContributionWeek[], total: number): string {
   }).join('')
 
   return `<a href="https://github.com/anjakDev" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 rounded-xl p-3 z-50 block transition-opacity hover:opacity-80" style="background:rgba(15,20,30,0.88)">
-      <div class="flex justify-between items-center mb-2 gap-4">
+      <div class="flex flex-col mb-2 gap-1">
         <span class="text-xs" style="color:rgba(255,255,255,0.4)">last ${WEEKS} weeks</span>
         <span class="text-xs font-semibold" style="color:#3ecfb0">${total} commits</span>
       </div>
