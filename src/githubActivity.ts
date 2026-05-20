@@ -22,7 +22,7 @@ interface GitHubGraphQLResponse {
 
 const WEEKS = 4
 const MIN_COMMITS = 5
-  const CELL_SIZE = '11px';
+const CELL_SIZE = '11px'
 
 
 function cellColor(count: number): string {
@@ -85,15 +85,21 @@ async function fetchWeeks(): Promise<ContributionWeek[]> {
   return json.data?.user?.contributionsCollection?.contributionCalendar?.weeks ?? []
 }
 
-function buildWidgetHTML(days: ContributionDay[], total: number): string {
-  const cells = days.map(d => cell(cellColor(d.contributionCount))).join('')
+function buildWidgetHTML(weeks: ContributionWeek[], total: number): string {
+  const cells = weeks.flatMap(week => {
+    const slots = new Array<number>(7).fill(0)
+    for (const day of week.contributionDays) {
+      slots[(new Date(day.date + 'T12:00:00Z').getUTCDay() + 6) % 7] = day.contributionCount
+    }
+    return slots.map(count => cell(cellColor(count)))
+  }).join('')
 
   return `<a href="https://github.com/anjakDev" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 rounded-xl p-3 z-50 block transition-opacity hover:opacity-80" style="background:rgba(15,20,30,0.88)">
       <div class="flex justify-between items-center mb-2 gap-4">
         <span class="text-xs" style="color:rgba(255,255,255,0.4)">last ${WEEKS} weeks</span>
         <span class="text-xs font-semibold" style="color:#3ecfb0">${total} commits</span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(${WEEKS > 2 ? 7 : days.length},${CELL_SIZE});gap:2px">
+      <div style="display:grid;grid-template-rows:repeat(7,${CELL_SIZE});grid-auto-columns:${CELL_SIZE};grid-auto-flow:column;gap:2px">
         ${cells}
       </div>
     </a>`
@@ -104,15 +110,11 @@ export function initGithubActivity(): void {
     .then(weeks => {
       if (weeks.length === 0) return
 
-      const days = weeks
-        .flatMap(w => w.contributionDays)
-        .sort((a, b) => a.date.localeCompare(b.date))
-
-      const total = days.reduce((sum, d) => sum + d.contributionCount, 0)
+      const total = weeks.reduce((sum, w) => w.contributionDays.reduce((s, d) => s + d.contributionCount, sum), 0)
       if (total < MIN_COMMITS) return
 
       const tmp = document.createElement('div')
-      tmp.innerHTML = buildWidgetHTML(days, total)
+      tmp.innerHTML = buildWidgetHTML(weeks, total)
       const widget = tmp.firstElementChild
       if (widget) document.body.appendChild(widget)
     })
