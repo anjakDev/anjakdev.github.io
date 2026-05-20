@@ -20,23 +20,24 @@ interface GitHubGraphQLResponse {
   errors?: { message: string }[]
 }
 
-const WEEKS = 2
+const WEEKS = 4
 const MIN_COMMITS = 5
-const ZERO_COLOR = 'rgba(255,255,255,0.07)'
+  const CELL_SIZE = '11px';
+
 
 function cellColor(count: number): string {
-  if (count === 0) return ZERO_COLOR
+  if (count === 0) return 'rgba(255,255,255,0.07)'
   if (count <= 3) return '#0F6E56'
   if (count <= 6) return '#1D9E75'
   return '#3ecfb0'
 }
 
 function cell(color: string): string {
-  return `<div style="width:11px;height:11px;border-radius:2px;background:${color}"></div>`
+  return `<div style="width:${CELL_SIZE};height:${CELL_SIZE};border-radius:2px;background:${color}"></div>`
 }
 
 async function fetchWeeks(): Promise<ContributionWeek[]> {
-  const token = import.meta.env.GH_ACTIVITY_TOKEN
+  const token = import.meta.env?.GH_ACTIVITY_TOKEN
   if (!token) {
     console.warn('[github-activity] GH_ACTIVITY_TOKEN is not set — widget hidden')
     return []
@@ -92,7 +93,7 @@ function buildWidgetHTML(days: ContributionDay[], total: number): string {
         <span class="text-xs" style="color:rgba(255,255,255,0.4)">last ${WEEKS} weeks</span>
         <span class="text-xs font-semibold" style="color:#3ecfb0">${total} commits</span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(${days.length},11px);gap:2px">
+      <div style="display:grid;grid-template-columns:repeat(${WEEKS > 2 ? 7 : days.length},${CELL_SIZE});gap:2px">
         ${cells}
       </div>
     </a>`
