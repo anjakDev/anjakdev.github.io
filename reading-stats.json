@@ -1,10 +1,24 @@
 {
-  "generatedAt": "2026-05-29T00:23:14Z",
+  "generatedAt": "2026-05-30T00:21:05Z",
   "feeds": {
     "total": 12,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "Claude Opus 4.8: \"a modest but tangible improvement\"",
+      "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-05-28T23:59:50Z",
+      "readingTime": 3
+    },
+    {
+      "title": "🌀🗞 The FLUX Review, Ep. 237",
+      "url": "https://read.fluxcollective.org/p/237",
+      "feedTitle": "🌀🗞 The FLUX Review",
+      "publishedAt": "2026-05-29T03:41:00Z",
+      "readingTime": 7
+    },
     {
       "title": "I think Anthropic and OpenAI have found product-market fit",
       "url": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything",
@@ -25,20 +39,6 @@
       "feedTitle": "Martin Fowler",
       "publishedAt": "2026-05-27T19:40:00Z",
       "readingTime": 7
-    },
-    {
-      "title": "sqlite AGENTS.md",
-      "url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-05-27T23:44:37Z",
-      "readingTime": 1
-    },
-    {
-      "title": "TypeScript, C# and Turbo Pascal with Anders Hejlsberg",
-      "url": "https://newsletter.pragmaticengineer.com/p/typescript-c-and-turbo-pascal-with",
-      "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-05-13T17:06:59Z",
-      "readingTime": 6
     }
   ]
 }
