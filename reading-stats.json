@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T00:23:27Z",
+  "generatedAt": "2026-06-22T00:24:31Z",
   "feeds": {
     "total": 12,
     "categories": 1
@@ -27,18 +27,18 @@
       "readingTime": 8
     },
     {
-      "title": "pkg.go.dev gets an official API",
-      "url": "https://golangweekly.com/issues/602",
-      "feedTitle": "Golang Weekly",
-      "publishedAt": "2026-05-22T00:00:00Z",
-      "readingTime": 3
-    },
-    {
       "title": "Fragments: May 27",
       "url": "https://martinfowler.com/fragments/2026-05-27.html",
       "feedTitle": "Martin Fowler",
       "publishedAt": "2026-05-27T19:40:00Z",
       "readingTime": 7
+    },
+    {
+      "title": "sqlite AGENTS.md",
+      "url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-05-27T23:44:37Z",
+      "readingTime": 1
     }
   ]
 }
