@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T00:22:24Z",
+  "generatedAt": "2026-06-28T00:20:18Z",
   "feeds": {
     "total": 12,
     "categories": 1
@@ -18,13 +18,6 @@
       "feedTitle": "🌀🗞 The FLUX Review",
       "publishedAt": "2026-05-29T03:41:00Z",
       "readingTime": 7
-    },
-    {
-      "title": "sqlite AGENTS.md",
-      "url": "https://simonwillison.net/2026/May/27/sqlite-agents/#atom-everything",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-05-27T23:44:37Z",
-      "readingTime": 1
     },
     {
       "title": "What is Code",
