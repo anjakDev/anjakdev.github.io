@@ -1,24 +1,10 @@
 {
-  "generatedAt": "2026-06-28T00:20:18Z",
+  "generatedAt": "2026-06-29T00:22:04Z",
   "feeds": {
     "total": 12,
     "categories": 1
   },
   "recentReads": [
-    {
-      "title": "Claude Opus 4.8: \"a modest but tangible improvement\"",
-      "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-05-28T23:59:50Z",
-      "readingTime": 3
-    },
-    {
-      "title": "🌀🗞 The FLUX Review, Ep. 237",
-      "url": "https://read.fluxcollective.org/p/237",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-05-29T03:41:00Z",
-      "readingTime": 7
-    },
     {
       "title": "What is Code",
       "url": "https://martinfowler.com/articles/what-is-code.html",
