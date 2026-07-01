@@ -1,10 +1,31 @@
 {
-  "generatedAt": "2026-06-30T00:22:10Z",
+  "generatedAt": "2026-07-01T00:22:59Z",
   "feeds": {
-    "total": 12,
+    "total": 13,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "I Could've Rickrolled the Entire FIFA World Cup. All I Needed Was My ID.",
+      "url": "https://bobdahacker.com/blog/fifa-hack",
+      "feedTitle": "bobdahacker blog",
+      "publishedAt": "2026-06-15T21:52:40.386Z",
+      "readingTime": 8
+    },
+    {
+      "title": "Count the number of Safari tabs",
+      "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-06-29T18:36:18Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Hack Your Summer",
+      "url": "https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-06-28T19:26:11Z",
+      "readingTime": 1
+    },
     {
       "title": "What is Code",
       "url": "https://martinfowler.com/articles/what-is-code.html",
