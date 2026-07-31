@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T01:10:03Z",
+  "generatedAt": "2026-07-31T01:22:33Z",
   "feeds": {
     "total": 13,
     "categories": 1
@@ -11,13 +11,6 @@
       "feedTitle": "The Pragmatic Engineer",
       "publishedAt": "2026-07-01T16:57:46Z",
       "readingTime": 7
-    },
-    {
-      "title": "I Could've Rickrolled the Entire FIFA World Cup. All I Needed Was My ID.",
-      "url": "https://bobdahacker.com/blog/fifa-hack",
-      "feedTitle": "bobdahacker blog",
-      "publishedAt": "2026-06-15T21:52:40.386Z",
-      "readingTime": 8
     },
     {
       "title": "Count the number of Safari tabs",
