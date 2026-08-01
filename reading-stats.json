@@ -1,17 +1,10 @@
 {
-  "generatedAt": "2026-07-31T01:22:33Z",
+  "generatedAt": "2026-08-01T01:23:48Z",
   "feeds": {
     "total": 13,
     "categories": 1
   },
   "recentReads": [
-    {
-      "title": "How Kent Beck shapes the software engineering industry",
-      "url": "https://newsletter.pragmaticengineer.com/p/how-kent-beck-shapes-the-software",
-      "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-07-01T16:57:46Z",
-      "readingTime": 7
-    },
     {
       "title": "Count the number of Safari tabs",
       "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
