@@ -1,10 +1,17 @@
 {
-  "generatedAt": "2026-08-07T01:05:23Z",
+  "generatedAt": "2026-08-08T00:06:51Z",
   "feeds": {
     "total": 13,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "🌀🗞 The FLUX Review, Ep. 246",
+      "url": "https://read.fluxcollective.org/p/246",
+      "feedTitle": "🌀🗞 The FLUX Review",
+      "publishedAt": "2026-08-07T00:02:17Z",
+      "readingTime": 7
+    },
     {
       "title": "🌀🗞 The FLUX Review, Ep. 245",
       "url": "https://read.fluxcollective.org/p/245",
@@ -32,13 +39,6 @@
       "feedTitle": "Martin Fowler",
       "publishedAt": "2026-07-31T13:48:00Z",
       "readingTime": 4
-    },
-    {
-      "title": "condense-json 1.0",
-      "url": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-02T22:19:59Z",
-      "readingTime": 1
     }
   ]
 }
