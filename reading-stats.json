@@ -1,10 +1,17 @@
 {
-  "generatedAt": "2026-08-25T00:03:26Z",
+  "generatedAt": "2026-08-26T00:03:40Z",
   "feeds": {
     "total": 13,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "🌀🗞 The FLUX Review, Ep. 248",
+      "url": "https://read.fluxcollective.org/p/the-flux-review-ep-248",
+      "feedTitle": "🌀🗞 The FLUX Review",
+      "publishedAt": "2026-08-21T00:05:58Z",
+      "readingTime": 7
+    },
     {
       "title": "Quoting Claude Opus 5 system prompt",
       "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
@@ -32,13 +39,6 @@
       "feedTitle": "🌀🗞 The FLUX Review",
       "publishedAt": "2026-07-31T00:01:29Z",
       "readingTime": 7
-    },
-    {
-      "title": "Open letters about AI development",
-      "url": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-02T04:16:52Z",
-      "readingTime": 2
     }
   ]
 }
