@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-08-26T00:03:40Z",
+  "generatedAt": "2026-08-27T01:06:39Z",
   "feeds": {
     "total": 13,
     "categories": 1
   },
   "recentReads": [
     {
-      "title": "🌀🗞 The FLUX Review, Ep. 248",
-      "url": "https://read.fluxcollective.org/p/the-flux-review-ep-248",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-08-21T00:05:58Z",
-      "readingTime": 7
-    },
-    {
-      "title": "Quoting Claude Opus 5 system prompt",
-      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
       "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-09T23:31:39Z",
+      "publishedAt": "2026-08-22T21:04:26Z",
       "readingTime": 1
     },
     {
-      "title": "Quoting OpenClaw (running Opus 4.6)",
-      "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
+      "title": "Your executable is a SQLite database",
+      "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
       "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-10T02:05:16Z",
+      "publishedAt": "2026-08-24T11:38:15Z",
       "readingTime": 1
     },
     {
-      "title": "🌀🗞 The FLUX Review, Ep. 246",
-      "url": "https://read.fluxcollective.org/p/246",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-08-07T00:02:17Z",
+      "title": "Why Ramp built its own in-house coding agent, Inspect",
+      "url": "https://newsletter.pragmaticengineer.com/p/why-ramp-built-inspect",
+      "feedTitle": "The Pragmatic Engineer",
+      "publishedAt": "2026-08-25T15:20:23Z",
       "readingTime": 7
     },
     {
-      "title": "🌀🗞 The FLUX Review, Ep. 245",
-      "url": "https://read.fluxcollective.org/p/245",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-07-31T00:01:29Z",
-      "readingTime": 7
+      "title": "EVE Online: The Move to Python 3 Begins!",
+      "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-08-25T22:59:30Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Quoting Paul Dix",
+      "url": "https://simonwillison.net/2026/Aug/26/paul-dix/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-08-26T08:07:55Z",
+      "readingTime": 1
     }
   ]
 }
