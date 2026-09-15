@@ -1,10 +1,31 @@
 {
-  "generatedAt": "2026-09-14T01:52:17Z",
+  "generatedAt": "2026-09-15T02:01:19Z",
   "feeds": {
     "total": 13,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "Generic methods land in Go 1.27",
+      "url": "https://golangweekly.com/issues/615",
+      "feedTitle": "Golang Weekly",
+      "publishedAt": "2026-08-28T00:00:00Z",
+      "readingTime": 4
+    },
+    {
+      "title": "Building cgo code without a C compiler?",
+      "url": "https://golangweekly.com/issues/617",
+      "feedTitle": "Golang Weekly",
+      "publishedAt": "2026-09-11T00:00:00Z",
+      "readingTime": 4
+    },
+    {
+      "title": "Go code can now run before your OS does",
+      "url": "https://golangweekly.com/issues/616",
+      "feedTitle": "Golang Weekly",
+      "publishedAt": "2026-09-04T00:00:00Z",
+      "readingTime": 3
+    },
     {
       "title": "Quoting Linus Torvalds",
       "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
@@ -17,27 +38,6 @@
       "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
       "feedTitle": "Simon Willison's Weblog",
       "publishedAt": "2026-08-24T11:38:15Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Why Ramp built its own in-house coding agent, Inspect",
-      "url": "https://newsletter.pragmaticengineer.com/p/why-ramp-built-inspect",
-      "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-08-25T15:20:23Z",
-      "readingTime": 7
-    },
-    {
-      "title": "EVE Online: The Move to Python 3 Begins!",
-      "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-25T22:59:30Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Quoting Paul Dix",
-      "url": "https://simonwillison.net/2026/Aug/26/paul-dix/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-26T08:07:55Z",
       "readingTime": 1
     }
   ]
