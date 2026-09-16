@@ -1,10 +1,24 @@
 {
-  "generatedAt": "2026-09-15T02:01:19Z",
+  "generatedAt": "2026-09-16T01:52:17Z",
   "feeds": {
     "total": 13,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "Fragments: September  8",
+      "url": "https://martinfowler.com/fragments/2026-09-08.html",
+      "feedTitle": "Martin Fowler",
+      "publishedAt": "2026-09-08T15:22:00Z",
+      "readingTime": 8
+    },
+    {
+      "title": "Social Media Engagement: summer 2026",
+      "url": "https://martinfowler.com/articles/2026-social-traffic.html",
+      "feedTitle": "Martin Fowler",
+      "publishedAt": "2026-09-09T16:21:00Z",
+      "readingTime": 1
+    },
     {
       "title": "Generic methods land in Go 1.27",
       "url": "https://golangweekly.com/issues/615",
@@ -25,20 +39,6 @@
       "feedTitle": "Golang Weekly",
       "publishedAt": "2026-09-04T00:00:00Z",
       "readingTime": 3
-    },
-    {
-      "title": "Quoting Linus Torvalds",
-      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-22T21:04:26Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Your executable is a SQLite database",
-      "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-08-24T11:38:15Z",
-      "readingTime": 1
     }
   ]
 }
