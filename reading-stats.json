@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T02:01:43Z",
+  "generatedAt": "2026-09-28T02:06:52Z",
   "feeds": {
     "total": 13,
     "categories": 1
@@ -20,13 +20,6 @@
       "readingTime": 1
     },
     {
-      "title": "Generic methods land in Go 1.27",
-      "url": "https://golangweekly.com/issues/615",
-      "feedTitle": "Golang Weekly",
-      "publishedAt": "2026-08-28T00:00:00Z",
-      "readingTime": 4
-    },
-    {
       "title": "Building cgo code without a C compiler?",
       "url": "https://golangweekly.com/issues/617",
       "feedTitle": "Golang Weekly",
@@ -39,6 +32,13 @@
       "feedTitle": "Golang Weekly",
       "publishedAt": "2026-09-04T00:00:00Z",
       "readingTime": 3
+    },
+    {
+      "title": "The Conductor Developer",
+      "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
+      "feedTitle": "Martin Fowler",
+      "publishedAt": "2026-07-31T13:48:00Z",
+      "readingTime": 4
     }
   ]
 }
