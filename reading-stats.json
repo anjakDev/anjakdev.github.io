@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T02:58:56Z",
+  "generatedAt": "2026-10-05T02:32:50Z",
   "feeds": {
     "total": 13,
     "categories": 1
@@ -27,18 +27,18 @@
       "readingTime": 4
     },
     {
-      "title": "Go code can now run before your OS does",
-      "url": "https://golangweekly.com/issues/616",
-      "feedTitle": "Golang Weekly",
-      "publishedAt": "2026-09-04T00:00:00Z",
-      "readingTime": 3
-    },
-    {
       "title": "The Conductor Developer",
       "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
       "feedTitle": "Martin Fowler",
       "publishedAt": "2026-07-31T13:48:00Z",
       "readingTime": 4
+    },
+    {
+      "title": "Count the number of Safari tabs",
+      "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-06-29T18:36:18Z",
+      "readingTime": 1
     }
   ]
 }
