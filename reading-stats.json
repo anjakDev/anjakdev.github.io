@@ -1,17 +1,10 @@
 {
-  "generatedAt": "2026-10-11T02:23:35Z",
+  "generatedAt": "2026-10-12T02:48:04Z",
   "feeds": {
     "total": 13,
     "categories": 1
   },
   "recentReads": [
-    {
-      "title": "Building cgo code without a C compiler?",
-      "url": "https://golangweekly.com/issues/617",
-      "feedTitle": "Golang Weekly",
-      "publishedAt": "2026-09-11T00:00:00Z",
-      "readingTime": 4
-    },
     {
       "title": "The Conductor Developer",
       "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
