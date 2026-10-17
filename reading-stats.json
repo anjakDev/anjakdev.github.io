@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-10-16T01:49:25Z",
+  "generatedAt": "2026-10-17T01:44:10Z",
   "feeds": {
     "total": 14,
     "categories": 1
   },
   "recentReads": [
     {
-      "title": "Ryan Serhant: How to Get People to Say Yes",
-      "url": "https://fs.blog/knowledge-project-podcast/ryan-serhant/",
-      "feedTitle": "Farnam Street",
-      "publishedAt": "2026-10-08T09:55:00Z",
+      "title": "When Software Meets Hardware",
+      "url": "https://martinfowler.com/articles/software-meets-hardware.html",
+      "feedTitle": "Martin Fowler",
+      "publishedAt": "2026-10-15T13:25:00Z",
       "readingTime": 1
     },
     {
-      "title": "The Conductor Developer",
-      "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html",
-      "feedTitle": "Martin Fowler",
-      "publishedAt": "2026-07-31T13:48:00Z",
+      "title": "The Pulse: OpenAI software engineer accused of spying",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-openai-software-engineer",
+      "feedTitle": "The Pragmatic Engineer",
+      "publishedAt": "2026-10-15T16:55:18Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Chirp Pong",
+      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-15T19:47:52Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Continuous accountability for Verified bots",
+      "url": "https://blog.cloudflare.com/verified-bots-accountability/",
+      "feedTitle": "The Cloudflare Blog",
+      "publishedAt": "2026-10-16T13:00:00Z",
       "readingTime": 4
     },
     {
-      "title": "Count the number of Safari tabs",
-      "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-06-29T18:36:18Z",
-      "readingTime": 1
-    },
-    {
-      "title": "What is Code",
-      "url": "https://martinfowler.com/articles/what-is-code.html",
-      "feedTitle": "Martin Fowler",
-      "publishedAt": "2026-05-12T13:30:00Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Fragments: May 14",
-      "url": "https://martinfowler.com/fragments/2026-05-14.html",
-      "feedTitle": "Martin Fowler",
-      "publishedAt": "2026-05-14T21:52:00Z",
+      "title": "🌀🗞 The FLUX Review, Ep. 255",
+      "url": "https://read.fluxcollective.org/p/255",
+      "feedTitle": "🌀🗞 The FLUX Review",
+      "publishedAt": "2026-10-16T00:03:54Z",
       "readingTime": 9
     }
   ]
