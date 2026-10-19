@@ -2,7 +2,7 @@ export function createSideBarTitle(): string {
   return `
   <!-- Mobile: full name + role together in the gradient bar -->
   <div class="flex lg:hidden flex-col items-center pt-8 px-6">
-    <h1 class="font-archivo-black text-4xl font-bold mb-2 text-cream">Anja Klipic</h1>
+    <h1 class="font-archivo-black text-4xl font-bold mb-2 text-cream">Anja Sperber</h1>
     <p class="font-archivo-black text-base text-cream">Software Engineer</p>
   </div>
 
@@ -18,7 +18,7 @@ export function createSideBarTitle(): string {
 export function createMainBarTitle(): string {
   return `
       <h1 class="hidden lg:block font-archivo-black text-5xl lg:text-88 font-bold mb-4 pt-32">
-        <span class="bg-linear-to-r from-gradient-cyan to-gradient-yellow bg-clip-text text-transparent">Klipic</span>
+        <span class="bg-linear-to-r from-gradient-cyan to-gradient-yellow bg-clip-text text-transparent">Sperber</span>
       </h1>
   `
 }
