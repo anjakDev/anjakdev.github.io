@@ -1,4 +1,5 @@
 import { $ } from 'bun'
+import { writeGithubActivity } from './fetchGithubActivity'
 
 await $`rm -rf dist`
 await $`bunx tailwindcss -i ./src/style.css -o ./dist/style.css`
@@ -10,7 +11,6 @@ const result = await Bun.build({
   root: '.',
   publicPath: '/',
   define: {
-    'import.meta.env.GH_ACTIVITY_TOKEN': JSON.stringify(process.env.GH_ACTIVITY_TOKEN ?? ''),
     'process.env.NODE_ENV': '"production"',
   },
   minify: {
@@ -25,4 +25,5 @@ if (!result.success) {
   process.exit(1)
 }
 
+await writeGithubActivity('./dist/github-activity.json')
 await $`[ -f reading-stats.json ] && cp reading-stats.json dist/reading-stats.json || true`

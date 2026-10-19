@@ -3,21 +3,13 @@ interface ContributionDay {
   date: string
 }
 
-interface ContributionWeek {
+export interface ContributionWeek {
   contributionDays: ContributionDay[]
 }
 
-interface GitHubGraphQLResponse {
-  data: {
-    user: {
-      contributionsCollection: {
-        contributionCalendar: {
-          weeks: ContributionWeek[]
-        }
-      }
-    }
-  }
-  errors?: { message: string }[]
+interface GithubActivity {
+  generatedAt: string
+  weeks: ContributionWeek[]
 }
 
 const WEEKS = 4
@@ -37,52 +29,10 @@ function cell(color: string): string {
 }
 
 async function fetchWeeks(): Promise<ContributionWeek[]> {
-  const token = import.meta.env.GH_ACTIVITY_TOKEN
-  if (!token) {
-    console.warn('[github-activity] GH_ACTIVITY_TOKEN is not set — widget hidden')
-    return []
-  }
-
-  const to = new Date()
-  const from = new Date(to)
-  from.setDate(from.getDate() - 7 * WEEKS)
-
-  const query = `{
-    user(login: "anjakDev") {
-      contributionsCollection(from: "${from.toISOString()}", to: "${to.toISOString()}") {
-        contributionCalendar {
-          weeks {
-            contributionDays {
-              contributionCount
-              date
-            }
-          }
-        }
-      }
-    }
-  }`
-
-  const res = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ query }),
-  })
-
-  if (!res.ok) {
-    console.error(`[github-activity] GitHub API responded with ${res.status} ${res.statusText}`)
-    return []
-  }
-
-  const json = (await res.json()) as GitHubGraphQLResponse
-  if (json.errors?.length) {
-    console.error('[github-activity] GraphQL error:', json.errors[0].message)
-    return []
-  }
-
-  return json.data?.user?.contributionsCollection?.contributionCalendar?.weeks ?? []
+  const res = await fetch('/github-activity.json')
+  if (!res.ok) return []
+  const json = (await res.json()) as GithubActivity
+  return Array.isArray(json.weeks) ? json.weeks : []
 }
 
 function buildWidgetHTML(weeks: ContributionWeek[], total: number): string {
