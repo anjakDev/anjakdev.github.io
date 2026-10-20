@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-10-19T01:58:25Z",
+  "generatedAt": "2026-10-20T02:15:56Z",
   "feeds": {
-    "total": 14,
+    "total": 15,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+      "feedTitle": "The Cloudflare Blog",
+      "publishedAt": "2026-10-19T13:00:00Z",
+      "readingTime": 7
+    },
+    {
+      "title": "llm-tools-datasette 0.1.1",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-18T23:43:09Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Monday Motivation: Find The Joy",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/6n8yku3plec5ulrvbsbau4e06wkdn84rd39vuso7.html",
+      "feedTitle": "Arnold's Pump Club",
+      "publishedAt": "2026-10-19T10:04:12.687Z",
+      "readingTime": 12
+    },
+    {
+      "title": "first thing — two quick questions",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/tzfe1m7j36utjgtx5rhcr8pfz4v3xq7gqxlltl2p.html",
+      "feedTitle": "Arnold's Pump Club",
+      "publishedAt": "2026-10-19T10:03:14.77Z",
+      "readingTime": 2
+    },
     {
       "title": "When Software Meets Hardware",
       "url": "https://martinfowler.com/articles/software-meets-hardware.html",
       "feedTitle": "Martin Fowler",
       "publishedAt": "2026-10-15T13:25:00Z",
       "readingTime": 1
-    },
-    {
-      "title": "The Pulse: OpenAI software engineer accused of spying",
-      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-openai-software-engineer",
-      "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-10-15T16:55:18Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Chirp Pong",
-      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-10-15T19:47:52Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Continuous accountability for Verified bots",
-      "url": "https://blog.cloudflare.com/verified-bots-accountability/",
-      "feedTitle": "The Cloudflare Blog",
-      "publishedAt": "2026-10-16T13:00:00Z",
-      "readingTime": 4
-    },
-    {
-      "title": "🌀🗞 The FLUX Review, Ep. 255",
-      "url": "https://read.fluxcollective.org/p/255",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-10-16T00:03:54Z",
-      "readingTime": 9
     }
   ]
 }
