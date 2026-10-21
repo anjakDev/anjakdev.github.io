@@ -1,10 +1,31 @@
 {
-  "generatedAt": "2026-10-20T02:15:56Z",
+  "generatedAt": "2026-10-21T02:09:20Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+      "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+      "feedTitle": "The Cloudflare Blog",
+      "publishedAt": "2026-10-19T19:12:53Z",
+      "readingTime": 12
+    },
+    {
+      "title": "My obituary for programming",
+      "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-19T23:58:25Z",
+      "readingTime": 1
+    },
+    {
+      "title": "llm-echo 0.5",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-18T23:16:16Z",
+      "readingTime": 1
+    },
     {
       "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
       "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
@@ -17,27 +38,6 @@
       "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
       "feedTitle": "Simon Willison's Weblog",
       "publishedAt": "2026-10-18T23:43:09Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Monday Motivation: Find The Joy",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/6n8yku3plec5ulrvbsbau4e06wkdn84rd39vuso7.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-10-19T10:04:12.687Z",
-      "readingTime": 12
-    },
-    {
-      "title": "first thing — two quick questions",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/tzfe1m7j36utjgtx5rhcr8pfz4v3xq7gqxlltl2p.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-10-19T10:03:14.77Z",
-      "readingTime": 2
-    },
-    {
-      "title": "When Software Meets Hardware",
-      "url": "https://martinfowler.com/articles/software-meets-hardware.html",
-      "feedTitle": "Martin Fowler",
-      "publishedAt": "2026-10-15T13:25:00Z",
       "readingTime": 1
     }
   ]
