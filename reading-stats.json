@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-10-22T02:03:30Z",
+  "generatedAt": "2026-10-23T02:07:57Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
     {
-      "title": "Cutting our inference bill by 68% by being obsessive about optimization",
-      "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+      "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+      "url": "https://blog.cloudflare.com/k-isms/",
       "feedTitle": "The Cloudflare Blog",
-      "publishedAt": "2026-10-19T19:12:53Z",
-      "readingTime": 12
-    },
-    {
-      "title": "My obituary for programming",
-      "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-10-19T23:58:25Z",
-      "readingTime": 1
-    },
-    {
-      "title": "llm-echo 0.5",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-10-18T23:16:16Z",
-      "readingTime": 1
-    },
-    {
-      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
-      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
-      "feedTitle": "The Cloudflare Blog",
-      "publishedAt": "2026-10-19T13:00:00Z",
+      "publishedAt": "2026-10-22T13:00:00Z",
       "readingTime": 7
     },
     {
-      "title": "llm-tools-datasette 0.1.1",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "title": "Tree Appreciator",
+      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
       "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-10-18T23:43:09Z",
+      "publishedAt": "2026-10-14T21:23:01Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Fragments: October 21",
+      "url": "https://martinfowler.com/fragments/2026-10-21.html",
+      "feedTitle": "Martin Fowler",
+      "publishedAt": "2026-10-21T10:51:00Z",
+      "readingTime": 5
+    },
+    {
+      "title": "The Pulse: Time to rethink software security because of AI?",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-do-we-need-to-rethink-software",
+      "feedTitle": "The Pragmatic Engineer",
+      "publishedAt": "2026-10-22T14:08:21Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Quoting Armin Ronacher",
+      "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-22T15:34:13Z",
       "readingTime": 1
     }
   ]
