@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-10-26T01:55:17Z",
+  "generatedAt": "2026-10-27T02:33:21Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
     {
+      "title": "“We should be more ambitious with the software we build”",
+      "url": "https://danluu.com/ambitious/",
+      "feedTitle": "https://danluu.com/atom/index.xml",
+      "publishedAt": "2026-10-24T00:00:00Z",
+      "readingTime": 26
+    },
+    {
+      "title": "battledrones v14: Compass Rose, a four player map",
+      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-24T03:59:57Z",
+      "readingTime": 1
+    },
+    {
+      "title": "Is anyone checking your supplements?",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/hs5yp61uieiaquriwz1d0wluat2ccw6635ssam4e.html",
+      "feedTitle": "Arnold's Pump Club",
+      "publishedAt": "2026-10-24T12:53:33.604Z",
+      "readingTime": 11
+    },
+    {
+      "title": "Seam Cutter",
+      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-25T15:10:19Z",
+      "readingTime": 1
+    },
+    {
       "title": "DE STAAT - FREEDOM (Official Music Video)",
       "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
       "feedTitle": "Simon Willison's Weblog",
       "publishedAt": "2026-10-22T19:42:26Z",
       "readingTime": 1
-    },
-    {
-      "title": "Weekly wisdom",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/eiwo3s77uoyjucgmt6ta7v4lb068hpyqc0vbphtd.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-10-23T10:05:40.844Z",
-      "readingTime": 11
-    },
-    {
-      "title": "🌀🗞 The FLUX Review, Ep. 256",
-      "url": "https://read.fluxcollective.org/p/256",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-10-23T01:52:56Z",
-      "readingTime": 8
-    },
-    {
-      "title": "When the cravings hit, do this",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/kzin53rput1tepjm4ce83s1v6n5e6hkg6poq33x7.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-10-20T10:04:09.163Z",
-      "readingTime": 9
-    },
-    {
-      "title": "free stuff from me",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/wcs5mja2iz9cpc6vyh4v1jaz1mcx0tw3cpchkymt.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-10-20T10:02:49.588Z",
-      "readingTime": 2
     }
   ]
 }
