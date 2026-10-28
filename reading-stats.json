@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-10-27T02:33:21Z",
+  "generatedAt": "2026-10-28T02:42:15Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
     {
-      "title": "“We should be more ambitious with the software we build”",
-      "url": "https://danluu.com/ambitious/",
-      "feedTitle": "https://danluu.com/atom/index.xml",
-      "publishedAt": "2026-10-24T00:00:00Z",
-      "readingTime": 26
+      "title": "Introducing Kimi K3.1 Pro",
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-23T19:40:54Z",
+      "readingTime": 2
     },
     {
-      "title": "battledrones v14: Compass Rose, a four player map",
-      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+      "title": "Quick Study",
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
       "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-10-24T03:59:57Z",
+      "publishedAt": "2026-10-23T21:35:13Z",
       "readingTime": 1
     },
     {
-      "title": "Is anyone checking your supplements?",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/hs5yp61uieiaquriwz1d0wluat2ccw6635ssam4e.html",
+      "title": "this really bothered me",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/1lvu4aeyiuunt8l4ncb1ho0x0orbuv0vmtwnkjgg.html",
       "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-10-24T12:53:33.604Z",
-      "readingTime": 11
+      "publishedAt": "2026-10-26T10:02:04.11Z",
+      "readingTime": 4
     },
     {
-      "title": "Seam Cutter",
-      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+      "title": "webframe: evaluated as a scraper and a sandbox",
+      "url": "https://simonwillison.net/2026/Oct/26/webframe-evaluation/",
       "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-10-25T15:10:19Z",
+      "publishedAt": "2026-10-26T16:15:00Z",
       "readingTime": 1
     },
     {
-      "title": "DE STAAT - FREEDOM (Official Music Video)",
-      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+      "title": "Quoting Jason Koebler",
+      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
       "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-10-22T19:42:26Z",
+      "publishedAt": "2026-10-26T19:00:25Z",
       "readingTime": 1
     }
   ]
