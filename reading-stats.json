@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-11-09T03:11:08Z",
+  "generatedAt": "2026-11-10T04:52:29Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
     {
-      "title": "How software engineering is changing: a tale of two eras",
-      "url": "https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing",
+      "title": "The post-quantum future of web privacy",
+      "url": "https://blog.cloudflare.com/vole-mole/",
+      "feedTitle": "The Cloudflare Blog",
+      "publishedAt": "2026-11-06T14:00:00Z",
+      "readingTime": 17
+    },
+    {
+      "title": "The Pragmatic Summit 2027",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-2027",
       "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-11-03T16:58:22Z",
-      "readingTime": 23
-    },
-    {
-      "title": "reduce the stress that follows you home",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/6zupjrhz1ufmjm93ohd5oxfx647u0n724drypnex.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-11-04T11:04:56.085Z",
-      "readingTime": 10
-    },
-    {
-      "title": "Why you tune out (when someone needs you)",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/5ewst5kzvxn9bmnea0g0rga5sin4t7adtjpfdium.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-10-28T10:03:27.565Z",
-      "readingTime": 11
-    },
-    {
-      "title": "The Pulse: Anthropic kills the coding interview",
-      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding",
-      "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-10-30T16:37:51Z",
+      "publishedAt": "2026-11-06T19:39:15Z",
       "readingTime": 1
     },
     {
-      "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-      "url": "https://blog.cloudflare.com/emudhra-patching/",
-      "feedTitle": "The Cloudflare Blog",
-      "publishedAt": "2026-10-30T17:38:50Z",
-      "readingTime": 6
+      "title": "RIP, Harvest",
+      "url": "https://aphyr.com/posts/427-rip-harvest",
+      "feedTitle": "Aphyr: Posts",
+      "publishedAt": "2026-11-08T19:35:42Z",
+      "readingTime": 2
+    },
+    {
+      "title": "Hide your slop PR descriptions behind <details><summary>",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-11-09T04:25:05Z",
+      "readingTime": 4
+    },
+    {
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-11-09T04:32:33Z",
+      "readingTime": 1
     }
   ]
 }
