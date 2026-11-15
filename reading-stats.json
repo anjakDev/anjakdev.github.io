@@ -1,10 +1,24 @@
 {
-  "generatedAt": "2026-11-14T03:42:54Z",
+  "generatedAt": "2026-11-15T03:20:21Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "🌀🗞 The FLUX Review, Ep. 259",
+      "url": "https://read.fluxcollective.org/p/259",
+      "feedTitle": "🌀🗞 The FLUX Review",
+      "publishedAt": "2026-11-13T01:03:31Z",
+      "readingTime": 7
+    },
+    {
+      "title": "Weekly wisdom",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/kqpz936a1tj1vinpdrumonaujw39bvt8l2wdkmm2.html",
+      "feedTitle": "Arnold's Pump Club",
+      "publishedAt": "2026-11-13T11:09:09.94Z",
+      "readingTime": 9
+    },
     {
       "title": "Tests as data: ensuring AI-generated code does what we want",
       "url": "https://martinfowler.com/articles/tests-as-data.html",
@@ -25,20 +39,6 @@
       "feedTitle": "The Pragmatic Engineer",
       "publishedAt": "2026-11-06T19:39:15Z",
       "readingTime": 1
-    },
-    {
-      "title": "RIP, Harvest",
-      "url": "https://aphyr.com/posts/427-rip-harvest",
-      "feedTitle": "Aphyr: Posts",
-      "publishedAt": "2026-11-08T19:35:42Z",
-      "readingTime": 2
-    },
-    {
-      "title": "Hide your slop PR descriptions behind <details><summary>",
-      "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-11-09T04:25:05Z",
-      "readingTime": 4
     }
   ]
 }
