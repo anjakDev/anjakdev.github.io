@@ -1,10 +1,17 @@
 {
-  "generatedAt": "2026-11-16T03:21:43Z",
+  "generatedAt": "2026-11-17T05:21:59Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "Monday Motivation: The Service Solution",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/i055e81z3mfyhdfi90jrcjrdumvytpzsjyyaq2kd.html",
+      "feedTitle": "Arnold's Pump Club",
+      "publishedAt": "2026-11-16T11:06:06.677Z",
+      "readingTime": 12
+    },
     {
       "title": "🌀🗞 The FLUX Review, Ep. 259",
       "url": "https://read.fluxcollective.org/p/259",
@@ -32,13 +39,6 @@
       "feedTitle": "The Cloudflare Blog",
       "publishedAt": "2026-11-06T14:00:00Z",
       "readingTime": 17
-    },
-    {
-      "title": "The Pragmatic Summit 2027",
-      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-summit-2027",
-      "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-11-06T19:39:15Z",
-      "readingTime": 1
     }
   ]
 }
