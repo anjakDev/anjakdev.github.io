@@ -1,10 +1,17 @@
 {
-  "generatedAt": "2026-11-17T05:21:59Z",
+  "generatedAt": "2026-11-18T04:49:19Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
+    {
+      "title": "Inference engineering for software engineers",
+      "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers",
+      "feedTitle": "The Pragmatic Engineer",
+      "publishedAt": "2026-11-17T16:11:23Z",
+      "readingTime": 13
+    },
     {
       "title": "Monday Motivation: The Service Solution",
       "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/i055e81z3mfyhdfi90jrcjrdumvytpzsjyyaq2kd.html",
@@ -32,13 +39,6 @@
       "feedTitle": "Martin Fowler",
       "publishedAt": "2026-11-11T15:17:00Z",
       "readingTime": 1
-    },
-    {
-      "title": "The post-quantum future of web privacy",
-      "url": "https://blog.cloudflare.com/vole-mole/",
-      "feedTitle": "The Cloudflare Blog",
-      "publishedAt": "2026-11-06T14:00:00Z",
-      "readingTime": 17
     }
   ]
 }
