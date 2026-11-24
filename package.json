@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/anjakDev/anjakdev.github.io#readme",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "bun-plugin-tailwind": "latest",
-    "tailwindcss": "^4",
+    "@tailwindcss/cli": "^4.3.5",
+    "bun-plugin-tailwind": "^0.1.2",
+    "tailwindcss": "^4.3.5",
     "typescript": "^5.9.3"
   }
 }
