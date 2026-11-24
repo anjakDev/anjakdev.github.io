@@ -1,43 +1,43 @@
 {
-  "generatedAt": "2026-11-23T04:13:50Z",
+  "generatedAt": "2026-11-24T07:13:16Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
     {
-      "title": "Inference engineering for software engineers",
-      "url": "https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers",
-      "feedTitle": "The Pragmatic Engineer",
-      "publishedAt": "2026-11-17T16:11:23Z",
+      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+      "feedTitle": "The Cloudflare Blog",
+      "publishedAt": "2026-11-20T20:00:45Z",
+      "readingTime": 8
+    },
+    {
+      "title": "Are you training in the wrong shoes?",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/c95bi5f8u9us74fqppen4cb49fau3x9b42z7ou4q.html",
+      "feedTitle": "Arnold's Pump Club",
+      "publishedAt": "2026-11-21T11:05:25.574Z",
+      "readingTime": 6
+    },
+    {
+      "title": "Muru",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-11-21T23:56:28Z",
+      "readingTime": 2
+    },
+    {
+      "title": "Monday Motivation: Get off the launch pad",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/ziboj32ba5f3mqnm209py7hxg2v9hpo98xkllfir.html",
+      "feedTitle": "Arnold's Pump Club",
+      "publishedAt": "2026-11-23T11:03:57.933Z",
       "readingTime": 13
     },
     {
-      "title": "Monday Motivation: The Service Solution",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/i055e81z3mfyhdfi90jrcjrdumvytpzsjyyaq2kd.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-11-16T11:06:06.677Z",
-      "readingTime": 12
-    },
-    {
-      "title": "🌀🗞 The FLUX Review, Ep. 259",
-      "url": "https://read.fluxcollective.org/p/259",
-      "feedTitle": "🌀🗞 The FLUX Review",
-      "publishedAt": "2026-11-13T01:03:31Z",
-      "readingTime": 7
-    },
-    {
-      "title": "Weekly wisdom",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/kqpz936a1tj1vinpdrumonaujw39bvt8l2wdkmm2.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-11-13T11:09:09.94Z",
-      "readingTime": 9
-    },
-    {
-      "title": "Tests as data: ensuring AI-generated code does what we want",
-      "url": "https://martinfowler.com/articles/tests-as-data.html",
-      "feedTitle": "Martin Fowler",
-      "publishedAt": "2026-11-11T15:17:00Z",
+      "title": "Select Styling Specimens",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+      "feedTitle": "Simon Willison's Weblog",
+      "publishedAt": "2026-11-22T19:45:06Z",
       "readingTime": 1
     }
   ]
