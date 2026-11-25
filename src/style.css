@@ -93,11 +93,3 @@ html, body {
     border-radius: 0.5rem;
     background: linear-gradient(to bottom, var(--color-gradient-cyan), var(--color-gradient-yellow));
 }
-
-/* Reading card content: always expanded on desktop regardless of mobile toggle state */
-@media (min-width: 1024px) {
-    .reading-card-content {
-        display: block !important;
-    }
-}
-

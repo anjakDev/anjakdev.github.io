@@ -7,68 +7,43 @@ export interface ContributionWeek {
   contributionDays: ContributionDay[]
 }
 
-interface GithubActivity {
+export interface GithubActivity {
   generatedAt: string
   weeks: ContributionWeek[]
 }
 
-const WEEKS = 4
-const MIN_COMMITS = 5
-const CELL_SIZE = '11px'
+export const WEEKS = 4
 
-
-function cellColor(count: number): string {
-  if (count === 0) return 'rgba(255,255,255,0.07)'
+function cellColor(count: number | null): string {
+  if (count === null) return 'transparent'
+  if (count === 0) return 'rgba(255,255,255,0.08)'
   if (count <= 3) return '#0F6E56'
   if (count <= 6) return '#1D9E75'
   return '#3ecfb0'
 }
 
-function cell(color: string): string {
-  return `<div style="width:${CELL_SIZE};height:${CELL_SIZE};border-radius:2px;background:${color}"></div>`
+function totalCommits(weeks: ContributionWeek[]): number {
+  return weeks.reduce((sum, w) => w.contributionDays.reduce((s, d) => s + d.contributionCount, sum), 0)
 }
 
-async function fetchWeeks(): Promise<ContributionWeek[]> {
-  const res = await fetch('/github-activity.json')
-  if (!res.ok) return []
-  const json = (await res.json()) as GithubActivity
-  return Array.isArray(json.weeks) ? json.weeks : []
-}
-
-function buildWidgetHTML(weeks: ContributionWeek[], total: number): string {
-  const cells = weeks.flatMap(week => {
-    const slots = new Array<number>(7).fill(0)
-    for (const day of week.contributionDays) {
-      slots[(new Date(day.date + 'T12:00:00Z').getUTCDay() + 6) % 7] = day.contributionCount
-    }
-    return slots.map(count => cell(cellColor(count)))
-  }).join('')
-
-  return `<a href="https://github.com/anjakDev" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 rounded-xl p-3 z-50 block transition-opacity hover:opacity-80" style="background:rgba(15,20,30,0.88)">
-      <div class="flex flex-col mb-2 gap-1">
-        <span class="text-xs" style="color:rgba(255,255,255,0.4)">last ${WEEKS} weeks</span>
-        <span class="text-xs font-semibold" style="color:#3ecfb0">${total} commits</span>
-      </div>
-      <div style="display:grid;grid-template-rows:repeat(7,${CELL_SIZE});grid-auto-columns:${CELL_SIZE};grid-auto-flow:column;gap:2px">
-        ${cells}
-      </div>
-    </a>`
-}
-
-export function initGithubActivity(): void {
-  fetchWeeks()
-    .then(weeks => {
-      if (weeks.length === 0) return
-
-      const total = weeks.reduce((sum, w) => w.contributionDays.reduce((s, d) => s + d.contributionCount, sum), 0)
-      if (total < MIN_COMMITS) return
-
-      const tmp = document.createElement('div')
-      tmp.innerHTML = buildWidgetHTML(weeks, total)
-      const widget = tmp.firstElementChild
-      if (widget) document.body.appendChild(widget)
+export function createShippingCard({ weeks }: GithubActivity): string {
+  const cells = weeks
+    .flatMap((week) => {
+      // Days outside the range (later this week) stay null and render blank, not as zero-commit days.
+      const slots = new Array<number | null>(7).fill(null)
+      for (const day of week.contributionDays) {
+        slots[new Date(day.date + 'T12:00:00Z').getUTCDay()] = day.contributionCount
+      }
+      return slots.map((count) => `<div class="aspect-square rounded-sm" style="background:${cellColor(count)}"></div>`)
     })
-    .catch((err: unknown) => {
-      console.error('[github-activity] Failed to fetch contribution data', err)
-    })
+    .join('')
+
+  return `
+    <a href="https://github.com/anjakDev" target="_blank" rel="noopener noreferrer"
+       class="rounded-2xl bg-slate-900 text-white p-5 h-full flex flex-col gap-4 transition-opacity hover:opacity-90">
+      <p class="font-mono text-[11px] tracking-wider text-white/60">SHIPPING · last ${WEEKS} weeks</p>
+      <p class="font-raleway text-sm"><span class="font-archivo-black text-4xl mr-1">${totalCommits(weeks)}</span> commits</p>
+      <div class="grid grid-cols-7 gap-1 mt-auto w-full max-w-72">${cells}</div>
+    </a>
+  `
 }

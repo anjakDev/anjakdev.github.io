@@ -2,14 +2,15 @@ import coffeeIcon from './assets/coffee.svg'
 import diamondIcon from './assets/diamond.svg'
 import lightIcon from './assets/light.svg'
 import { createExperienceSection } from './experienceSection'
-import { SECTIONS, type SectionId } from './menuSection'
+import { type SectionId, VISIBLE_SECTIONS } from './menuSection'
+import { createRightNowMeta, createRightNowSection } from './rightNowSection'
 import { createSkillsSection } from './skillsSection'
 
 function createParagraphOne(): string {
   return `<div class="flex gap-4 items-start">
                 <img src="${diamondIcon}" alt="" class="w-6 h-6 shrink-0 mt-1" />
                 <p class="font-raleway text-md text-slate-600 leading-relaxed">
-                  I want to build cool stuff that makes a positive impact and that is made so well it can survive all kinds of turbulence. 
+                  I want to ask the right questions, and solve the right problem. It's simple, but far from easy. That excites me.
                 </p>
               </div>`
 }
@@ -42,14 +43,19 @@ function createAboutBody(): string {
 
 export function createAboutSection(): string {
   const bodies: Record<SectionId, string> = {
+    now: createRightNowSection(),
     about: createAboutBody(),
     experience: createExperienceSection(),
     skills: createSkillsSection(),
   }
-  const sections = SECTIONS.map(
+  const asides: Partial<Record<SectionId, string>> = { now: createRightNowMeta() }
+  const sections = VISIBLE_SECTIONS.map(
     ({ id, label }) => `
         <section id="${id}" class="scroll-mt-12">
-          <h2 class="font-archivo-black text-3xl mb-6">${label}</h2>
+          <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-6">
+            <h2 class="font-archivo-black text-3xl">${label}</h2>
+            ${asides[id] ?? ''}
+          </div>
           ${bodies[id]}
         </section>`,
   ).join('')

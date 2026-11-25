@@ -3,8 +3,6 @@ import { createImageCard } from './imageCard'
 import { createMenuSection } from './menuSection'
 import { createHero, createSidebarBadge } from './titleSection'
 import { initSkillsPhysics } from './skillsSection'
-import { initGithubActivity } from './githubActivity'
-import { initReadingCard } from './readingCard'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -19,9 +17,8 @@ app.innerHTML = `
       <div class="flex flex-col gap-12 px-6 pt-12 lg:px-12 lg:pt-10 lg:flex-row lg:items-start lg:justify-between">
         ${createHero()}
 
-        <div class="flex flex-col items-center gap-12 w-full lg:w-64 lg:mt-12 shrink-0">
+        <div class="flex justify-center w-full lg:w-64 lg:mt-12 shrink-0">
           ${createImageCard()}
-          <div id="reading-card-container" class="w-full"></div>
         </div>
       </div>
 
@@ -78,5 +75,3 @@ function initSkillsWhenVisible(): void {
 
 initActiveNavLink()
 initSkillsWhenVisible()
-initGithubActivity()
-initReadingCard()
