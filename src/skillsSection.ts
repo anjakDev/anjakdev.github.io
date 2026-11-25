@@ -57,7 +57,9 @@ export function createSkillsSection(): string {
   </div>`
 }
 
-export function initSkillsPhysics(): void {
+export async function initSkillsPhysics(): Promise<void> {
+  // Tag sizes are measured once below, so they must use the real font metrics.
+  await document.fonts.ready
   const container = document.getElementById("skills-physics-container")
   if (!container) return
 

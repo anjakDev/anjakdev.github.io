@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap');
 @import "tailwindcss";
 
 @theme {
     --font-archivo-black: "Archivo Black", sans-serif;
     --font-raleway: "Raleway", sans-serif;
-    --text-88: 88px;
-    --text-20: 20px;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
     --color-cream: #FFFCE7;
     --color-gradient-cyan: #0CC0DF;
     --color-gradient-yellow: #FFDE59;
@@ -14,6 +12,23 @@
 
 html, body {
     overscroll-behavior: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.name-highlight {
+    /* Longhands on purpose: Tailwind repeats any color-mix() declaration inside an
+       @supports block, and a repeated `background` shorthand would reset the size below. */
+    background-image: linear-gradient(90deg,
+            color-mix(in srgb, var(--color-gradient-cyan) 60%, transparent),
+            color-mix(in srgb, var(--color-gradient-yellow) 70%, transparent));
+    background-repeat: no-repeat;
+    background-size: 100% 0.35em;
+    background-position: 0 85%;
 }
 
 @keyframes shimmer {
@@ -37,18 +52,18 @@ html, body {
     animation: shimmer 1.0s ease-in-out infinite;
 }
 
-.menu-title {
+.nav-link {
     position: relative;
 }
 
-.menu-title.active::after {
+.nav-link.active::after {
     content: '';
     position: absolute;
     bottom: -5px;
     left: 0;
     right: 0;
-    height: 4px;
-    background-color: var(--color-cream);
+    height: 3px;
+    background-color: currentColor;
     border-radius: 5px;
 }
 
@@ -77,13 +92,6 @@ html, body {
     padding-left: 3px;
     border-radius: 0.5rem;
     background: linear-gradient(to bottom, var(--color-gradient-cyan), var(--color-gradient-yellow));
-}
-
-/* Mobile: stack all sections regardless of desktop hover toggle */
-@media (max-width: 1023px) {
-    .section-content {
-        display: block !important;
-    }
 }
 
 /* Reading card content: always expanded on desktop regardless of mobile toggle state */

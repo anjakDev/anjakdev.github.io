@@ -1,10 +1,20 @@
+export const SECTIONS = [
+  { id: 'about', label: 'About me' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'skills', label: 'Skills' },
+] as const
+
+export type SectionId = (typeof SECTIONS)[number]['id']
+
 export function createMenuSection(): string {
+  const links = SECTIONS.map(
+    ({ id, label }) =>
+      `<a href="#${id}" class="nav-link font-archivo-black text-lg text-slate-900" data-section="${id}">${label}</a>`,
+  ).join('\n')
+
   return `
-      <!-- Sidebar Menu -->
-        <div class="hidden lg:flex py-16 px-6 flex-col gap-4 justify-start items-end">
-            <h3 class="font-archivo-black text-2xl text-cream cursor-pointer menu-title active" data-section="about">About Me</h3>
-            <h3 class="font-archivo-black text-2xl text-cream cursor-pointer menu-title" data-section="experience">Experience</h3>
-            <h3 class="font-archivo-black text-2xl text-cream cursor-pointer menu-title" data-section="skills">Skills</h3>
-        </div>
-      `
+    <nav class="hidden lg:flex flex-col items-end gap-2">
+      ${links}
+    </nav>
+  `
 }

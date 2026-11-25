@@ -1,24 +1,23 @@
-export function createSideBarTitle(): string {
+export function createSidebarBadge(): string {
   return `
-  <!-- Mobile: full name + role together in the gradient bar -->
-  <div class="flex lg:hidden flex-col items-center pt-8 px-6">
-    <h1 class="font-archivo-black text-4xl font-bold mb-2 text-cream">Anja Sperber</h1>
-    <p class="font-archivo-black text-base text-cream">Software Engineer</p>
-  </div>
-
-  <!-- Desktop: Anja in the sidebar -->
-  <div class="hidden lg:flex flex-col items-end lg:h-1/2">
-          <h1 class="font-archivo-black text-5xl lg:text-88 font-bold mb-4 px-6 pt-32 text-cream">Anja</h1>
-          <p class="font-archivo-black text-lg lg:text-20 text-cream mb-8 px-6">Software Engineer</p>
-        </div>
-  `
-
+    <a href="#top" aria-label="Back to top"
+       class="w-14 h-14 rounded-full bg-cream text-slate-900 flex items-center justify-center font-archivo-black text-lg shadow-sm">AS</a>
+  `;
 }
 
-export function createMainBarTitle(): string {
+export function createHero(): string {
   return `
-      <h1 class="hidden lg:block font-archivo-black text-5xl lg:text-88 font-bold mb-4 pt-32">
-        <span class="bg-linear-to-r from-gradient-cyan to-gradient-yellow bg-clip-text text-transparent">Sperber</span>
+    <div class="flex flex-col gap-6 min-w-0">
+      <p class="font-mono text-xs text-slate-600">
+        ~/anja · software engineer · <span class="text-emerald-700">● building</span>
+      </p>
+      <h1 class="font-archivo-black text-6xl sm:text-7xl lg:text-[clamp(4.5rem,8vw,120px)] leading-[0.9]">
+        Anja<br />
+        <span class="name-highlight">Sperber</span>
       </h1>
-  `
+      <p class="font-raleway text-xl lg:text-2xl text-slate-700 leading-snug max-w-xl">
+        I build software that makes a positive impact and is made well enough to survive all kinds of turbulence.
+      </p>
+    </div>
+  `;
 }

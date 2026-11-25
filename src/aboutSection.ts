@@ -2,6 +2,7 @@ import coffeeIcon from './assets/coffee.svg'
 import diamondIcon from './assets/diamond.svg'
 import lightIcon from './assets/light.svg'
 import { createExperienceSection } from './experienceSection'
+import { SECTIONS, type SectionId } from './menuSection'
 import { createSkillsSection } from './skillsSection'
 
 function createParagraphOne(): string {
@@ -31,42 +32,32 @@ function createParagraphThree(): string {
               </div>`
 }
 
-function createMobileSectionHeader(title: string, isFirst: boolean = false): string {
-  const topMargin = isFirst ? '' : ' mt-12'
-  return `<h2 class="lg:hidden font-archivo-black text-3xl text-slate-900 mb-6${topMargin}">${title}</h2>`
+function createAboutBody(): string {
+  return `<div class="space-y-4">
+            ${createParagraphOne()}
+            ${createParagraphTwo()}
+            ${createParagraphThree()}
+          </div>`
 }
 
 export function createAboutSection(): string {
+  const bodies: Record<SectionId, string> = {
+    about: createAboutBody(),
+    experience: createExperienceSection(),
+    skills: createSkillsSection(),
+  }
+  const sections = SECTIONS.map(
+    ({ id, label }) => `
+        <section id="${id}" class="scroll-mt-12">
+          <h2 class="font-archivo-black text-3xl mb-6">${label}</h2>
+          ${bodies[id]}
+        </section>`,
+  ).join('')
+
   return `
-    <div class="flex flex-col lg:flex-row gap-0">
-      <!-- Content Area -->
-      <div class="w-full lg:w-2/3 bg-cream py-16 px-6">
-        <div class="max-w-4xl mx-auto">
-          <!-- About Me Content -->
-          <div class="section-content active" data-section="about">
-            ${createMobileSectionHeader('About Me', true)}
-            <div class="space-y-4">
-              ${createParagraphOne()}
-              ${createParagraphTwo()}
-              ${createParagraphThree()}
-            </div>
-          </div>
-
-          <!-- Experience Content -->
-          <div class="section-content hidden" data-section="experience">
-            ${createMobileSectionHeader('Experience')}
-            ${createExperienceSection()}
-          </div>
-
-          <!-- Skills Content -->
-          <div class="section-content hidden" data-section="skills">
-            ${createMobileSectionHeader('Skills')}
-            ${createSkillsSection()}
-          </div>
-        </div>
+    <div class="w-full py-16 px-6 lg:px-12">
+      <div class="max-w-4xl flex flex-col gap-20">${sections}
       </div>
     </div>
-
-
-    `
+  `
 }
