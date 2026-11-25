@@ -14,3 +14,7 @@ syntax = true
 
 [serve.static]
 plugins = ["bun-plugin-tailwind"]
+[install]
+# bun-plugin-tailwind lists `bun` as a peer dependency; auto-installing it puts an older Bun in
+# node_modules/.bin, which `bun run` then prefers over the version pinned in CI.
+peer = false
