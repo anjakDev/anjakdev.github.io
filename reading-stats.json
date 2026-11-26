@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-11-25T05:46:30Z",
+  "generatedAt": "2026-11-26T05:37:18Z",
   "feeds": {
     "total": 15,
     "categories": 1
   },
   "recentReads": [
     {
-      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
-      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
-      "feedTitle": "The Cloudflare Blog",
-      "publishedAt": "2026-11-20T20:00:45Z",
-      "readingTime": 8
+      "title": "The Pragmatic Engineer Essay Challenge: Category Winners (Part 1)",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge",
+      "feedTitle": "The Pragmatic Engineer",
+      "publishedAt": "2026-11-24T19:16:38Z",
+      "readingTime": 24
     },
     {
-      "title": "Are you training in the wrong shoes?",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/c95bi5f8u9us74fqppen4cb49fau3x9b42z7ou4q.html",
-      "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-11-21T11:05:25.574Z",
+      "title": "🌀🗞 The FLUX Review, Ep. 260",
+      "url": "https://read.fluxcollective.org/p/260",
+      "feedTitle": "🌀🗞 The FLUX Review",
+      "publishedAt": "2026-11-20T01:05:30Z",
+      "readingTime": 7
+    },
+    {
+      "title": "Fragments: November 20",
+      "url": "https://martinfowler.com/fragments/2026-11-20.html",
+      "feedTitle": "Martin Fowler",
+      "publishedAt": "2026-11-20T18:38:00Z",
       "readingTime": 6
     },
     {
-      "title": "Muru",
-      "url": "https://simonwillison.net/2026/Nov/21/muru/",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
       "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-11-21T23:56:28Z",
+      "publishedAt": "2026-11-24T16:53:59Z",
       "readingTime": 2
     },
     {
-      "title": "Monday Motivation: Get off the launch pad",
-      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/ziboj32ba5f3mqnm209py7hxg2v9hpo98xkllfir.html",
+      "title": "how to avoid bad decisions (when you're exhausted)",
+      "url": "https://kill-the-newsletter.com/feeds/251yxk3n29hprrv3ta5h0laka8lkvcpk9dvobx6s/entries/p29em21wt18lp98v9ysm9f2rkj94i2515w787yec.html",
       "feedTitle": "Arnold's Pump Club",
-      "publishedAt": "2026-11-23T11:03:57.933Z",
-      "readingTime": 13
-    },
-    {
-      "title": "Select Styling Specimens",
-      "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
-      "feedTitle": "Simon Willison's Weblog",
-      "publishedAt": "2026-11-22T19:45:06Z",
-      "readingTime": 1
+      "publishedAt": "2026-11-24T11:04:47.795Z",
+      "readingTime": 10
     }
   ]
 }
